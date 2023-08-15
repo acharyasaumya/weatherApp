@@ -1,24 +1,67 @@
-# README
+# Weather App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Weather App is a Ruby on Rails application that provides weather information for any city. Users can sign in and search for the weather conditions of a particular city. The app integrates with the OpenWeatherMap API to fetch the latest weather data.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- User Authentication (sign in) without using any gems or libraries.
+- Search for weather by city name.
+- Integration with the OpenWeatherMap API.
 
-* System dependencies
+## Prerequisites
 
-* Configuration
+- Ruby version: (Your Ruby version here, e.g., 2.7.1)
+- Rails version: (Your Rails version here, e.g., 6.1.3)
 
-* Database creation
+## Setup
 
-* Database initialization
+### API Key
 
-* How to run the test suite
+You'll need to have an OpenWeatherMap API key to fetch the weather data. Set up the API key as an environment variable:
 
-* Services (job queues, cache servers, search engines, etc.)
+\```zsh
+export OPENWEATHERMAP_API_KEY='your-api-key-here'
+\```
 
-* Deployment instructions
+### Installation
 
-* ...
+Clone the repository:
+
+\```zsh
+git clone https://github.com/yourusername/WeatherApp.git
+\```
+
+Navigate to the project directory:
+
+\```zsh
+cd WeatherApp
+\```
+
+Install the required dependencies:
+
+\```zsh
+bundle install
+\```
+
+Set up the database:
+
+\```zsh
+rails db:create
+rails db:migrate
+\```
+
+Start the server:
+
+\```zsh
+rails server
+\```
+
+The application will now be accessible at [http://localhost:3000](http://localhost:3000).
+
+## Testing
+
+This project uses RSpec for testing. To run the tests:
+
+\```zsh
+rspec
+\```
